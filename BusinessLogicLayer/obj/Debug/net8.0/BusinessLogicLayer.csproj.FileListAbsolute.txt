@@ -1,0 +1,14 @@
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.deps.json
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.runtimeconfig.json
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.dll
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\bin\Debug\net8.0\BusinessLogicLayer.pdb
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfo.cs
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.dll
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\obj\Debug\net8.0\refint\BusinessLogicLayer.dll
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.pdb
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.genruntimeconfig.cache
+G:\ProjectPRN212\EmployeeManagement\BusinessLogicLayer\obj\Debug\net8.0\ref\BusinessLogicLayer.dll
