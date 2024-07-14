@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BusinessLogicLayer.BusinessObjects;
+namespace BusinessObjects.BusinessObjects;
 
 public partial class Employee
 {

@@ -4,9 +4,82 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_EmployeeManagement"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" Loaded="Window_Loaded"
+            WindowStartupLocation="CenterScreen"
+        Title="Product Management" Height="700" Width="900">
     <Grid>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <Label Content="Employee Management" HorizontalAlignment="Center" FontSize="36"/>
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" >
+                <Label Content="Employee ID"/>
+                <TextBox TextWrapping="Wrap" Text="" Width="723" Margin="70,0,0,0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
+                <Label x:Name="tbFullName" Content="FullName"/>
+                <TextBox TextWrapping="Wrap" Text="" Width="722" Margin="86,0,0,0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
+                <Label Content="Email"/>
+                <TextBox TextWrapping="Wrap" Text="" Width="721" Margin="108,0,0,0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
+                <Label Content="Phone"/>
+                <TextBox TextWrapping="Wrap" Text="" Width="723" Margin="103,0,0,0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
+                <Label Content="Hiredate"/>
+                <TextBox TextWrapping="Wrap" Text="" Width="723" Margin="90,0,0,0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
+                <Label Content="Job Name"/>
+                <TextBox TextWrapping="Wrap" Text="" Width="721" Margin="83,0,0,0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
+                <Label Content="Manager"/>
+                <TextBox TextWrapping="Wrap" Text="" Width="721" Margin="88,0,0,0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
+                <Label Content="Departmant"/>
+                <TextBox TextWrapping="Wrap" Text="" Width="722" Margin="70,0,0,0" />
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+                    <Label Content="Name"/>
+                    <TextBox TextWrapping="Wrap" Width="127" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                    <Label Content="Department"/>
+                    <ComboBox Width="126" HorizontalAlignment="Left" Margin="5,0,0,0" Height="20"/>
+                </StackPanel>
+                <ListView x:Name="lvEmployeeManagement" Height="243" d:ItemsSource="{d:SampleData ItemCount=5}" Width="727" Margin="15,10,0,0">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Employee ID"/>
+                            <GridViewColumn Header="FullName"/>
+                            <GridViewColumn Header="Email"/>
+                            <GridViewColumn Header="Phone"/>
+                            <GridViewColumn Header="Hiredate"/>
+                            <GridViewColumn Header="JobName"/>
+                            <GridViewColumn Header="Manager"/>
+                            <GridViewColumn Header="Department"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+            
+            
+        </StackPanel>
+
+
+
+
+        
     </Grid>
 </Window>
+

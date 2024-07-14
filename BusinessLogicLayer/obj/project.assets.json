@@ -4376,9 +4376,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\ProjectPRN212\\EmployeeManagement\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
-      "projectName": "BusinessLogicLayer",
-      "projectPath": "G:\\ProjectPRN212\\EmployeeManagement\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+      "projectUniqueName": "G:\\ProjectPRN212\\EmployeeManagement\\BusinessLogicLayer\\BusinessObjects.csproj",
+      "projectName": "BusinessObjects",
+      "projectPath": "G:\\ProjectPRN212\\EmployeeManagement\\BusinessLogicLayer\\BusinessObjects.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "G:\\ProjectPRN212\\EmployeeManagement\\BusinessLogicLayer\\obj\\",
       "projectStyle": "PackageReference",

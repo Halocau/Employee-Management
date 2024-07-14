@@ -5,29 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_EmployeeManagement"
         mc:Ignorable="d"
-        Title="Register" Height="720" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#f2f2f2">
+        Title="Register" Height="620" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#f2f2f2">
     <Grid>
         <Border CornerRadius="10" Background="White" BorderBrush="#ccc" BorderThickness="1" Padding="30" Width="400" VerticalAlignment="Center" HorizontalAlignment="Center">
             <StackPanel>
                 <TextBlock Text="Create an Account" FontSize="24" FontWeight="Bold" Foreground="#333" HorizontalAlignment="Center"/>
                 <TextBlock Text="Please fill in the details below" FontSize="14" Foreground="#666" HorizontalAlignment="Center" Margin="0,5,0,20"/>
 
-                <TextBlock Text="Username:" FontSize="16" Margin="0,10,0,0"/>
-                <TextBox Name="UsernameTextBox" FontSize="16" Margin="0,5,0,10" Padding="10" BorderBrush="#ccc" BorderThickness="1" Background="#f9f9f9"/>
-
                 <TextBlock Text="Email:" FontSize="16" Margin="0,10,0,0"/>
-                <TextBox Name="EmailTextBox" FontSize="16" Margin="0,5,0,10" Padding="10" BorderBrush="#ccc" BorderThickness="1" Background="#f9f9f9"/>
+                <TextBox x:Name="tbEmail" FontSize="16" Margin="0,5,0,10" Padding="10" BorderBrush="#ccc" BorderThickness="1" Background="#f9f9f9"/>
 
                 <TextBlock Text="Name:" FontSize="16" Margin="0,10,0,0"/>
-                <TextBox Name="NameTextBox" FontSize="16" Margin="0,5,0,10" Padding="10" BorderBrush="#ccc" BorderThickness="1" Background="#f9f9f9"/>
+                <TextBox x:Name="tbName" FontSize="16" Margin="0,5,0,10" Padding="10" BorderBrush="#ccc" BorderThickness="1" Background="#f9f9f9"/>
 
                 <TextBlock Text="Password:" FontSize="16" Margin="0,10,0,0"/>
-                <PasswordBox Name="PasswordBox" FontSize="16" Margin="0,5,0,10" Padding="10" BorderBrush="#ccc" BorderThickness="1" Background="#f9f9f9"/>
+                <PasswordBox x:Name="tbPassword" FontSize="16" Margin="0,5,0,10" Padding="10" BorderBrush="#ccc" BorderThickness="1" Background="#f9f9f9"/>
 
                 <TextBlock Text="Confirm Password:" FontSize="16" Margin="0,10,0,0"/>
-                <PasswordBox Name="ConfirmPasswordBox" FontSize="16" Margin="0,5,0,20" Padding="10" BorderBrush="#ccc" BorderThickness="1" Background="#f9f9f9"/>
+                <PasswordBox x:Name="tbconfirm" FontSize="16" Margin="0,5,0,20" Padding="10" BorderBrush="#ccc" BorderThickness="1" Background="#f9f9f9"/>
 
-                <Button Name="RegisterButton" Content="Register" FontSize="16" Width="100" Height="35" HorizontalAlignment="Right" Background="#0078D7" Foreground="White" BorderThickness="0" Cursor="Hand"/>
+                <Button Name="RegisterButton" Content="Register" FontSize="16" Width="100" Height="35" HorizontalAlignment="Right" Background="#0078D7" Foreground="White" BorderThickness="0" Cursor="Hand" Click="RegisterButton_Click"/>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,20,0,0">
                     <TextBlock Text="Already have an account?" FontSize="14" Foreground="#666"/>

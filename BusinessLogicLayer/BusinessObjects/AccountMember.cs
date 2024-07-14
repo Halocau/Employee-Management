@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BusinessLogicLayer.BusinessObjects;
+namespace BusinessObjects.BusinessObjects;
 
 public partial class AccountMember
 {
-    public string MemberId { get; set; } = null!;
+    public int MemberId { get; set; }
 
     public string MemberPassword { get; set; } = null!;
 

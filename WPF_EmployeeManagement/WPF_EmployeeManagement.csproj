@@ -8,4 +8,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessObjects.csproj" />
+    <ProjectReference Include="..\BusinessObjects\Repositories.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessObjects", "BusinessObjects\BusinessObjects.csproj", "{94E701BC-275D-4D68-A0EB-DAE9431A3CE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "BusinessObjects\Repositories.csproj", "{94E701BC-275D-4D68-A0EB-DAE9431A3CE6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{A98C347B-1031-42BC-810A-D151EF29EAD5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLogicLayer", "BusinessLogicLayer\BusinessLogicLayer.csproj", "{3ECDA8F1-A51E-428E-9067-1D502EA5F710}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessObjects", "BusinessLogicLayer\BusinessObjects.csproj", "{3ECDA8F1-A51E-428E-9067-1D502EA5F710}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_EmployeeManagement", "WPF_EmployeeManagement\WPF_EmployeeManagement.csproj", "{2D9EF315-4140-405E-AE1E-C6885B41049B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_EmployeeManagement", "WPF_EmployeeManagement\WPF_EmployeeManagement.csproj", "{2D9EF315-4140-405E-AE1E-C6885B41049B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
