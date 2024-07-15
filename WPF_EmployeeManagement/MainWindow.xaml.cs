@@ -278,7 +278,7 @@ namespace WPF_EmployeeManagement
         {
             RegionandCountry regionandCountry = new RegionandCountry();
             regionandCountry.Show();
-            this.Close();
+         
         }
     }
 }

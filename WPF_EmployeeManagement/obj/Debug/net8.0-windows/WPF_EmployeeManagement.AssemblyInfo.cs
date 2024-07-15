@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WPF_EmployeeManagement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d67fd50f5e35f2708f2ab8e174e660751131f1af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fb4904464067fcd97dca7e633b81bbba774b1e1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WPF_EmployeeManagement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WPF_EmployeeManagement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

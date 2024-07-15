@@ -172,6 +172,11 @@ namespace WPF_EmployeeManagement
             CountryDataGrid.ItemsSource = iCountryService.GetCountries();
             RegionDataGrid.ItemsSource = iRegionService.GetRegions();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 
 }
