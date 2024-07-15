@@ -84,3 +84,5 @@ G:\ProjectPRN212\EmployeeManagement\WPF_EmployeeManagement\bin\Debug\net8.0-wind
 G:\ProjectPRN212\EmployeeManagement\WPF_EmployeeManagement\bin\Debug\net8.0-windows\DataAccessLayer.pdb
 G:\ProjectPRN212\EmployeeManagement\WPF_EmployeeManagement\obj\Debug\net8.0-windows\WPF_EmployeeManagement.sourcelink.json
 G:\ProjectPRN212\EmployeeManagement\WPF_EmployeeManagement\obj\Debug\net8.0-windows\WPF_Empl.5AB87A60.Up2Date
+G:\ProjectPRN212\EmployeeManagement\WPF_EmployeeManagement\obj\Debug\net8.0-windows\RegionandCountry.g.cs
+G:\ProjectPRN212\EmployeeManagement\WPF_EmployeeManagement\obj\Debug\net8.0-windows\RegionandCountry.baml

@@ -7,7 +7,7 @@
         mc:Ignorable="d" Loaded="Window_Loaded"
             WindowStartupLocation="CenterScreen"
         Title="Product Management" Height="750" Width="950">
-    <Grid>
+    <Grid  Background="AntiqueWhite">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"></RowDefinition>
@@ -61,6 +61,7 @@
                     <Label Content="Department"/>
                     <ComboBox x:Name="cbDepartmentSearch" Width="126" HorizontalAlignment="Left" Margin="5,0,0,0" Height="26" SelectionChanged="cbDepartmentSearch_SelectionChanged"/>
                     <Label x:Name="lblItemCount" Content="Count: 0" Height="25" FontSize="10" Visibility="Collapsed"/>
+                    <Button x:Name="btnRegionandCountry" Content="Region and Country" Margin="0,30,0,0" Click="btnRegionandCountry_Click"/>
                 </StackPanel>
                 <ListView x:Name="lvEmployeeManagement" Height="243" Width="780" Margin="15,10,0,0" PreviewMouseLeftButtonUp="lvEmployeeManagement_PreviewMouseLeftButtonUp">
                     <ListView.View>

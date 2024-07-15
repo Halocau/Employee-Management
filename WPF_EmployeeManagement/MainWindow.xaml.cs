@@ -274,5 +274,11 @@ namespace WPF_EmployeeManagement
             }
         }
 
+        private void btnRegionandCountry_Click(object sender, RoutedEventArgs e)
+        {
+            RegionandCountry regionandCountry = new RegionandCountry();
+            regionandCountry.Show();
+            this.Close();
+        }
     }
 }
