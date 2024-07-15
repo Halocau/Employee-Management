@@ -5,9 +5,8 @@ David | Austin | DAUSTIN | 590.423.4569 | 6/25/2005 | IT_PROG | 103 | 60
 Valli | Pataballa | VPATABAL | 590.423.4560 | 2/5/2006 | IT_PROG | 103 | 60
 Diana | Lorentz | DLORENTZ | 590.423.5567 | 2/7/2007 | IT_PROG | 103 | 60
 Nancy | Greenberg | NGREENBE | 515.124.4569 | 8/17/2002 | FI_MGR | 101 | 100
-Daniel | Faviet | DFAVIET | 515.124.4169 | 8/16/2002 | FI_ACCOUNT | 108 | 100
 John | Chen | JCHEN | 515.124.4269 | 9/28/2005 | FI_ACCOUNT | 108 | 100
-Ismael | Sciarra | ISCIARRA | 515.124.4369 | 9/30/2005 | FI_ACCOUNT | 108 | 100
+Ismael111 | Sciarra111 | ISCIARRA11 | 515.124.11111 | 9/30/2005 | HR_REP | 108 | 100
 Jose | Manuel	Urman | JMURMAN | 515.124.4469 | 3/7/2006 | FI_ACCOUNT | 108 | 100
 Luis | Popp | LPOPP | 515.124.4567 | 12/7/2007 | FI_ACCOUNT | 108 | 100
 Den | Raphaely | DRAPHEAL | 515.127.4561 | 12/7/2002 | PU_MAN |  | 30
@@ -100,3 +99,4 @@ Douglas | Grant | DGRANT | 6.505.079.844 | 1/13/2008 | SH_CLERK | 124 | 50
 1 | 1 | 1 | 1 | 2/1/2007 | AC_ACCOUNT |  | 10
 1 | 1 | 1@g.cc | 1 | 8/3/2005 | AC_ACCOUNT |  | 10
 1 | 1 | @ | 1 | 9/4/2005 | AC_MGR |  | 10
+1 | 1 | t@gmail.com | 131313133131 | 12/1/2005 | AC_ACCOUNT |  | 60

@@ -134,8 +134,9 @@ namespace WPF_EmployeeManagement
 
 
 
-
-
+                    // Update the label with the count of items
+                    lblItemCount.Content = $"Count: {foundDepartment.Count()}";
+                    lblItemCount.Visibility = Visibility.Visible;
                 }
                 else
                 {
@@ -152,7 +153,7 @@ namespace WPF_EmployeeManagement
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
-
+           
             tbEmployeeID.Clear();
             tbsFirstName.Clear();
             tbLastName.Clear();
@@ -165,6 +166,8 @@ namespace WPF_EmployeeManagement
             cbJobName.SelectedValue = null;
             cbDepartment.SelectedValue = null;
             cbDepartmentSearch.SelectedValue = null;
+            // Hide the item count label
+            lblItemCount.Visibility = Visibility.Collapsed;
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)

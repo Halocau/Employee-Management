@@ -60,6 +60,7 @@
                     <TextBox x:Name="tbSearchEmpID" TextWrapping="Wrap" Width="127" HorizontalAlignment="Left" Margin="5,0,0,0" Height="25" TextChanged="TextBox_TextChanged"/>
                     <Label Content="Department"/>
                     <ComboBox x:Name="cbDepartmentSearch" Width="126" HorizontalAlignment="Left" Margin="5,0,0,0" Height="26" SelectionChanged="cbDepartmentSearch_SelectionChanged"/>
+                    <Label x:Name="lblItemCount" Content="Count: 0" Height="25" FontSize="10" Visibility="Collapsed"/>
                 </StackPanel>
                 <ListView x:Name="lvEmployeeManagement" Height="243" Width="780" Margin="15,10,0,0" PreviewMouseLeftButtonUp="lvEmployeeManagement_PreviewMouseLeftButtonUp">
                     <ListView.View>
@@ -84,14 +85,7 @@
                 <Button x:Name="btnExportJSON" Content="Export Txt and JSON" Height="36" Width="113" Margin="20,0,0,0" Background="#FFE20173" Foreground="White" Click="btnExportJSON_Click"/>
                 <Button x:Name="btnClose" Content="Close" Height="36" Width="113" Margin="20,0,0,0" Background="#FF9E01E2" Foreground="White" Click="btnClose_Click"/>
             </StackPanel>
-
-
-
         </StackPanel>
-
-
-
-
 
     </Grid>
 </Window>

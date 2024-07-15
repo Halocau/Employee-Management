@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "G:\\ProjectPRN212\\EmployeeManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D9EF315-4140-405E-AE1E-C6885B41049B}|WPF_EmployeeManagement\\WPF_EmployeeManagement.csproj|g:\\projectprn212\\employeemanagement\\wpf_employeemanagement\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D9EF315-4140-405E-AE1E-C6885B41049B}|WPF_EmployeeManagement\\WPF_EmployeeManagement.csproj|solutionrelative:wpf_employeemanagement\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D9EF315-4140-405E-AE1E-C6885B41049B}|WPF_EmployeeManagement\\WPF_EmployeeManagement.csproj|g:\\projectprn212\\employeemanagement\\wpf_employeemanagement\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D9EF315-4140-405E-AE1E-C6885B41049B}|WPF_EmployeeManagement\\WPF_EmployeeManagement.csproj|solutionrelative:wpf_employeemanagement\\register.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D9EF315-4140-405E-AE1E-C6885B41049B}|WPF_EmployeeManagement\\WPF_EmployeeManagement.csproj|g:\\projectprn212\\employeemanagement\\wpf_employeemanagement\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{2D9EF315-4140-405E-AE1E-C6885B41049B}|WPF_EmployeeManagement\\WPF_EmployeeManagement.csproj|solutionrelative:wpf_employeemanagement\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{2D9EF315-4140-405E-AE1E-C6885B41049B}|WPF_EmployeeManagement\\WPF_EmployeeManagement.csproj|g:\\projectprn212\\employeemanagement\\wpf_employeemanagement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D9EF315-4140-405E-AE1E-C6885B41049B}|WPF_EmployeeManagement\\WPF_EmployeeManagement.csproj|solutionrelative:wpf_employeemanagement\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D9EF315-4140-405E-AE1E-C6885B41049B}|WPF_EmployeeManagement\\WPF_EmployeeManagement.csproj|G:\\ProjectPRN212\\EmployeeManagement\\wpf_employeemanagement\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -26,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "G:\\ProjectPRN212\\EmployeeManagement\\WPF_EmployeeManagement\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WPF_EmployeeManagement\\MainWindow.xaml",
@@ -43,40 +35,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.xaml.cs",
-              "DocumentMoniker": "G:\\ProjectPRN212\\EmployeeManagement\\WPF_EmployeeManagement\\Register.xaml.cs",
-              "RelativeDocumentMoniker": "WPF_EmployeeManagement\\Register.xaml.cs",
-              "ToolTip": "G:\\ProjectPRN212\\EmployeeManagement\\WPF_EmployeeManagement\\Register.xaml.cs",
-              "RelativeToolTip": "WPF_EmployeeManagement\\Register.xaml.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAgwE8AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T08:05:29.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.xaml.cs",
-              "DocumentMoniker": "G:\\ProjectPRN212\\EmployeeManagement\\WPF_EmployeeManagement\\Login.xaml.cs",
-              "RelativeDocumentMoniker": "WPF_EmployeeManagement\\Login.xaml.cs",
-              "ToolTip": "G:\\ProjectPRN212\\EmployeeManagement\\WPF_EmployeeManagement\\Login.xaml.cs",
-              "RelativeToolTip": "WPF_EmployeeManagement\\Login.xaml.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAgwEQAAABqAAAA",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "G:\\ProjectPRN212\\EmployeeManagement\\WPF_EmployeeManagement\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPF_EmployeeManagement\\MainWindow.xaml.cs",
+              "ToolTip": "G:\\ProjectPRN212\\EmployeeManagement\\WPF_EmployeeManagement\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WPF_EmployeeManagement\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAmwJoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-15T08:04:56.935Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "G:\\ProjectPRN212\\EmployeeManagement\\WPF_EmployeeManagement\\Login.xaml",
-              "RelativeDocumentMoniker": "WPF_EmployeeManagement\\Login.xaml",
-              "ToolTip": "G:\\ProjectPRN212\\EmployeeManagement\\WPF_EmployeeManagement\\Login.xaml",
-              "RelativeToolTip": "WPF_EmployeeManagement\\Login.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-15T08:04:53.952Z",
+              "WhenOpened": "2024-07-15T08:53:55.167Z",
               "EditorCaption": ""
             }
           ]
