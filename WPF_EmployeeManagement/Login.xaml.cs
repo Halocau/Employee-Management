@@ -22,6 +22,7 @@ namespace WPF_EmployeeManagement
     public partial class Login : Window
     {
         private readonly IAccountMemberRepository iAccountMemberRepository;
+
         public Login()
         {
             InitializeComponent();
@@ -34,8 +35,6 @@ namespace WPF_EmployeeManagement
             registerWindow.Show();
             this.Close();
         }
-
-
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
@@ -51,19 +50,24 @@ namespace WPF_EmployeeManagement
                     AccountMember accountMember = iAccountMemberRepository.CheckAccount(tbUserName.Text, tbPassword.Password);
                     if (accountMember != null)
                     {
-                        MessageBoxResult result = MessageBox.Show("Login successful!", "Success", MessageBoxButton.OKCancel, MessageBoxImage.Information);
-                        if (result == MessageBoxResult.OK)
+                        if (accountMember.MemberRole == 1)
                         {
-                            MainWindow mainWindow = new MainWindow();
-                            mainWindow.Show();
-                            this.Close();
+                            MessageBoxResult result = MessageBox.Show("Login successful!", "Success", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+                            if (result == MessageBoxResult.OK)
+                            {
+                                MainWindow mainWindow = new MainWindow();
+                                mainWindow.Show();
+                                this.Close();
+                            }
+                            else if (result == MessageBoxResult.Cancel)
+                            {
+                                this.Close();
+                            }
                         }
-                        else if (result == MessageBoxResult.Cancel)
+                        else
                         {
-                            this.Close();
+                            MessageBox.Show("You do not have the required role to access this application.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                         }
-
-
                     }
                     else
                     {
@@ -75,7 +79,6 @@ namespace WPF_EmployeeManagement
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
     }
 }

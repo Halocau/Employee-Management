@@ -112,9 +112,6 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\ProjectPRN212\\EmployeeManagement\\BusinessLogicLayer\\BusinessObjects.csproj": {
-                "projectPath": "G:\\ProjectPRN212\\EmployeeManagement\\BusinessLogicLayer\\BusinessObjects.csproj"
-              },
               "G:\\ProjectPRN212\\EmployeeManagement\\DataAccessLayer\\DataAccessLayer.csproj": {
                 "projectPath": "G:\\ProjectPRN212\\EmployeeManagement\\DataAccessLayer\\DataAccessLayer.csproj"
               }

@@ -1,0 +1,102 @@
+Neena1 | Kochhar1 | NKOCHHAR | 515.123.4568 | 9/21/2005 | AD_VP |  | 90
+Lex | De Haan | LDEHAAN | 515.123.4569 | 1/13/2001 | AD_VP |  | 90
+Alexander | Hunold | AHUNOLD | 590.423.4567 | 1/3/2006 | IT_PROG | 102 | 60
+David | Austin | DAUSTIN | 590.423.4569 | 6/25/2005 | IT_PROG | 103 | 60
+Valli | Pataballa | VPATABAL | 590.423.4560 | 2/5/2006 | IT_PROG | 103 | 60
+Diana | Lorentz | DLORENTZ | 590.423.5567 | 2/7/2007 | IT_PROG | 103 | 60
+Nancy | Greenberg | NGREENBE | 515.124.4569 | 8/17/2002 | FI_MGR | 101 | 100
+Daniel | Faviet | DFAVIET | 515.124.4169 | 8/16/2002 | FI_ACCOUNT | 108 | 100
+John | Chen | JCHEN | 515.124.4269 | 9/28/2005 | FI_ACCOUNT | 108 | 100
+Ismael | Sciarra | ISCIARRA | 515.124.4369 | 9/30/2005 | FI_ACCOUNT | 108 | 100
+Jose | Manuel	Urman | JMURMAN | 515.124.4469 | 3/7/2006 | FI_ACCOUNT | 108 | 100
+Luis | Popp | LPOPP | 515.124.4567 | 12/7/2007 | FI_ACCOUNT | 108 | 100
+Den | Raphaely | DRAPHEAL | 515.127.4561 | 12/7/2002 | PU_MAN |  | 30
+Alexander | Khoo | AKHOO | 515.127.4562 | 5/18/2003 | PU_CLERK | 114 | 30
+Shelli | Baida | SBAIDA | 515.127.4563 | 12/24/2005 | PU_CLERK | 114 | 30
+Sigal | Tobias | STOBIAS | 515.127.4564 | 7/24/2005 | PU_CLERK | 114 | 30
+Guy | Himuro | GHIMURO | 515.127.4565 | 11/15/2006 | PU_CLERK | 114 | 30
+Karen | Colmenares | KCOLMENA | 515.127.4566 | 8/10/2007 | PU_CLERK | 114 | 30
+Matthew | Weiss | MWEISS | 650.123.1234 | 7/18/2004 | ST_MAN |  | 50
+Adam | Fripp | AFRIPP | 650.123.2234 | 4/10/2005 | ST_MAN |  | 50
+Payam | Kaufling | PKAUFLIN | 650.123.3234 | 5/1/2003 | ST_MAN |  | 50
+Shanta | Vollman | SVOLLMAN | 650.123.4234 | 10/10/2005 | ST_MAN |  | 50
+Kevin | Mourgos | KMOURGOS | 650.123.5234 | 11/16/2007 | ST_MAN |  | 50
+Julia | Nayer | JNAYER | 650.124.1214 | 7/16/2005 | ST_CLERK | 120 | 50
+Irene | Mikkilineni | IMIKKILI | 650.124.1224 | 9/28/2006 | ST_CLERK | 120 | 50
+James | Landry | JLANDRY | 650.124.1334 | 1/14/2007 | ST_CLERK | 120 | 50
+Steven | Markle | SMARKLE | 650.124.1434 | 3/8/2008 | ST_CLERK | 120 | 50
+Laura | Bissot | LBISSOT | 650.124.5234 | 8/20/2005 | ST_CLERK | 121 | 50
+Mozhe | Atkinson | MATKINSO | 650.124.6234 | 10/30/2005 | ST_CLERK | 121 | 50
+James | Marlow | JAMRLOW | 650.124.7234 | 2/16/2005 | ST_CLERK | 121 | 50
+TJ | Olson | TJOLSON | 650.124.8234 | 4/10/2007 | ST_CLERK | 121 | 50
+Jason | Mallin | JMALLIN | 6.501.271.934 | 6/14/2004 | ST_CLERK | 122 | 50
+Michael | Rogers | MROGERS | 6.501.271.834 | 8/26/2006 | ST_CLERK | 122 | 50
+Ki | Gee | KGEE | 6.501.271.734 | 12/12/2007 | ST_CLERK | 122 | 50
+Hazel | Philtanker | HPHILTAN | 6.501.271.634 | 6/2/2008 | ST_CLERK | 122 | 50
+Renske | Ladwig | RLADWIG | 6.501.211.234 | 7/14/2003 | ST_CLERK | 123 | 50
+Stephen | Stiles | SSTILES | 6.501.212.034 | 10/26/2005 | ST_CLERK | 123 | 50
+John | Seo | JSEO | 6.501.212.019 | 2/12/2006 | ST_CLERK | 123 | 50
+Joshua | Patel | JPATEL | 6.501.211.834 | 4/6/2006 | ST_CLERK | 123 | 50
+Trenna | Rajs | TRAJS | 6.501.218.009 | 10/17/2003 | ST_CLERK | 124 | 50
+Curtis | Davies | CDAVIES | 6.501.212.994 | 5/19/2005 | ST_CLERK | 124 | 50
+Randall | Matos | RMATOS | 6.501.212.874 | 3/15/2006 | ST_CLERK | 124 | 50
+Peter | Vargas | PVARGAS | 6.501.212.004 | 7/9/2006 | ST_CLERK | 124 | 50
+John | Russell | JRUSSEL | 011.44.1344.429268 | 10/1/2004 | SA_MAN |  | 80
+Karen | Partners | KPARTNER | 011.44.1344.467268 | 1/5/2005 | SA_MAN |  | 80
+Alberto | Errazuriz | AERRAZUR | 011.44.1344.429278 | 3/10/2005 | SA_MAN |  | 80
+Gerald | Cambrault | GCAMBRAU | 011.44.1344.619268 | 10/15/2007 | SA_MAN |  | 80
+Eleni | Zlotkey | EZLOTKEY | 011.44.1344.429018 | 1/29/2008 | SA_MAN |  | 80
+Peter | Tucker | PTUCKER | 011.44.1344.129268 | 1/30/2005 | SA_REP | 145 | 80
+David | Bernstein | DBERNSTE | 011.44.1344.345268 | 3/24/2005 | SA_REP | 145 | 80
+Peter | Hall | PHALL | 011.44.1344.478968 | 8/20/2005 | SA_REP | 145 | 80
+Christopher | Olsen | COLSEN | 011.44.1344.498718 | 3/30/2006 | SA_REP | 145 | 80
+Nanette | Cambrault | NCAMBRAU | 011.44.1344.987668 | 12/9/2006 | SA_REP | 145 | 80
+Oliver | Tuvault | OTUVAULT | 011.44.1344.486508 | 11/23/2007 | SA_REP | 145 | 80
+Janette | King | JKING | 011.44.1345.429268 | 1/30/2004 | SA_REP | 146 | 80
+Patrick | Sully | PSULLY | 011.44.1345.929268 | 3/4/2004 | SA_REP | 146 | 80
+Allan | McEwen | AMCEWEN | 011.44.1345.829268 | 8/1/2004 | SA_REP | 146 | 80
+Lindsey | Smith | LSMITH | 011.44.1345.729268 | 3/10/2005 | SA_REP | 146 | 80
+Louise | Doran | LDORAN | 011.44.1345.629268 | 12/15/2005 | SA_REP | 146 | 80
+Sarath | Sewall | SSEWALL | 011.44.1345.529268 | 11/3/2006 | SA_REP | 146 | 80
+Clara | Vishney | CVISHNEY | 011.44.1346.129268 | 11/11/2005 | SA_REP | 147 | 80
+Danielle | Greene | DGREENE | 011.44.1346.229268 | 3/19/2007 | SA_REP | 147 | 80
+Mattea | Marvins | MMARVINS | 011.44.1346.329268 | 1/24/2008 | SA_REP | 147 | 80
+David | Lee | DLEE | 011.44.1346.529268 | 2/23/2008 | SA_REP | 147 | 80
+Sundar | Ande | SANDE | 011.44.1346.629268 | 3/24/2008 | SA_REP | 147 | 80
+Amit | Banda | ABANDA | 011.44.1346.729268 | 4/21/2008 | SA_REP | 147 | 80
+Lisa | Ozer | LOZER | 011.44.1343.929268 | 3/11/2005 | SA_REP | 148 | 80
+Harrison | Bloom | HBLOOM | 011.44.1343.829268 | 3/23/2006 | SA_REP | 148 | 80
+Tayler | Fox | TFOX | 011.44.1343.729268 | 1/24/2006 | SA_REP | 148 | 80
+William | Smith | WSMITH | 011.44.1343.629268 | 2/23/2007 | SA_REP | 148 | 80
+Elizabeth | Bates | EBATES | 011.44.1343.529268 | 3/24/2007 | SA_REP | 148 | 80
+Sundita | Kumar | SKUMAR | 011.44.1343.329268 | 4/21/2008 | SA_REP | 148 | 80
+Ellen | Abel | EABEL | 011.44.1644.429267 | 5/11/2004 | SA_REP | 149 | 80
+Alyssa | Hutton | AHUTTON | 011.44.1644.429266 | 3/19/2005 | SA_REP | 149 | 80
+Jonathon | Taylor | JTAYLOR | 011.44.1644.429265 | 3/24/2006 | SA_REP | 149 | 80
+Jack | Livingston | JLIVINGS | 011.44.1644.429264 | 4/23/2006 | SA_REP | 149 | 80
+Kimberely | Grant | KGRANT | 011.44.1644.429263 | 5/24/2007 | SA_REP | 149 | 80
+Charles | Johnson | CJOHNSON | 011.44.1644.429262 | 1/4/2008 | SA_REP | 149 | 80
+Winston | Taylor | WTAYLOR | 6.505.079.876 | 1/24/2006 | SH_CLERK | 120 | 50
+Jean | Fleaur | JFLEAUR | 6.505.079.877 | 6/23/2006 | SH_CLERK | 120 | 50
+Martha | Sullivan | MSULLIVA | 6.505.079.878 | 6/21/2007 | SH_CLERK | 120 | 50
+Girard | Geoni | GGEONI | 6.505.079.879 | 2/3/2008 | SH_CLERK | 120 | 50
+Nandita | Sarchand | NSARCHAN | 6.505.091.876 | 1/27/2004 | SH_CLERK | 121 | 50
+Alexis | Bull | ABULL | 6.505.092.876 | 2/20/2005 | SH_CLERK | 121 | 50
+Julia | Dellinger | JDELLING | 6.505.093.876 | 6/24/2006 | SH_CLERK | 121 | 50
+Anthony | Cabrio | ACABRIO | 6.505.094.876 | 2/7/2007 | SH_CLERK | 121 | 50
+Kelly | Chung | KCHUNG | 6.505.051.876 | 6/14/2005 | SH_CLERK | 122 | 50
+Jennifer | Dilly | JDILLY | 6.505.052.876 | 8/13/2005 | SH_CLERK | 122 | 50
+Timothy | Gates | TGATES | 6.505.053.876 | 7/11/2006 | SH_CLERK | 122 | 50
+Randall | Perkins | RPERKINS | 6.505.054.876 | 12/19/2007 | SH_CLERK | 122 | 50
+Sarah | Bell | SBELL | 6.505.011.876 | 2/4/2004 | SH_CLERK | 123 | 50
+Britney | Everett | BEVERETT | 6.505.012.876 | 3/3/2005 | SH_CLERK | 123 | 50
+Samuel | McCain | SMCCAIN | 6.505.013.876 | 7/1/2006 | SH_CLERK | 123 | 50
+Vance | Jones | VJONES | 6.505.014.876 | 3/17/2007 | SH_CLERK | 123 | 50
+Alana | Walsh | AWALSH | 6.505.079.811 | 4/24/2006 | SH_CLERK | 124 | 50
+Kevin | Feeney | KFEENEY | 6.505.079.822 | 5/23/2006 | SH_CLERK | 124 | 50
+Donald | OConnell | DOCONNEL | 6.505.079.833 | 6/21/2007 | SH_CLERK | 124 | 50
+Douglas | Grant | DGRANT | 6.505.079.844 | 1/13/2008 | SH_CLERK | 124 | 50
+1 | 1 | t@gmail.com | 1111111111111111111 | 2/1/2007 | AC_MGR |  | 10
+1 | 1 | 1 | 1 | 2/1/2007 | AC_ACCOUNT |  | 10
+1 | 1 | 1@g.cc | 1 | 8/3/2005 | AC_ACCOUNT |  | 10
+1 | 1 | @ | 1 | 9/4/2005 | AC_MGR |  | 10

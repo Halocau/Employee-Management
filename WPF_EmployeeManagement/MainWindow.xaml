@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WPF_EmployeeManagement"
         mc:Ignorable="d" Loaded="Window_Loaded"
             WindowStartupLocation="CenterScreen"
-        Title="Product Management" Height="700" Width="900">
+        Title="Product Management" Height="750" Width="950">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -18,68 +18,81 @@
             <Label Content="Employee Management" HorizontalAlignment="Center" FontSize="36"/>
             <StackPanel Orientation="Horizontal" Margin="0,20,0,0" >
                 <Label Content="Employee ID"/>
-                <TextBox TextWrapping="Wrap" Text="" Width="723" Margin="70,0,0,0" />
+                <TextBox x:Name="tbEmployeeID" IsReadOnly="True" TextWrapping="Wrap"  Width="781" Margin="70,0,0,0"  Text="{Binding Path=EmployeeId}" DataContext="{Binding ElementName=lvEmployeeManagement, Path=SelectedItem}" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0"  >
+                <Label Content="FirstName"/>
+                <TextBox x:Name="tbsFirstName" TextWrapping="Wrap"  Width="781" Margin="83,0,0,0" Text="{Binding Path=FirstName}" DataContext="{Binding ElementName=lvEmployeeManagement, Path=SelectedItem}"  />
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
-                <Label x:Name="tbFullName" Content="FullName"/>
-                <TextBox TextWrapping="Wrap" Text="" Width="722" Margin="86,0,0,0" />
+                <Label Content="LastName"/>
+                <TextBox x:Name="tbLastName" TextWrapping="Wrap"  Width="781" Margin="83,0,0,0" Text="{Binding Path=LastName}" DataContext="{Binding ElementName=lvEmployeeManagement, Path=SelectedItem}"  />
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
                 <Label Content="Email"/>
-                <TextBox TextWrapping="Wrap" Text="" Width="721" Margin="108,0,0,0" />
+                <TextBox x:Name="tbEmail" TextWrapping="Wrap" Width="781" Margin="108,0,0,0"  Text="{Binding Path=Email}" DataContext="{Binding ElementName=lvEmployeeManagement, Path=SelectedItem}" />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0"  >
                 <Label Content="Phone"/>
-                <TextBox TextWrapping="Wrap" Text="" Width="723" Margin="103,0,0,0" />
+                <TextBox x:Name="tbPhone" TextWrapping="Wrap"  Width="781" Margin="103,0,0,0"  Text="{Binding Path=Phone}" DataContext="{Binding ElementName=lvEmployeeManagement, Path=SelectedItem}" />
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
                 <Label Content="Hiredate"/>
-                <TextBox TextWrapping="Wrap" Text="" Width="723" Margin="90,0,0,0" />
+                <DatePicker x:Name="dpHireDate" Margin="90,0,0,0" Width="777" Text="{Binding Path=HireDate}" DataContext="{Binding ElementName=lvEmployeeManagement, Path=SelectedItem}" />
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
                 <Label Content="Job Name"/>
-                <TextBox TextWrapping="Wrap" Text="" Width="721" Margin="83,0,0,0" />
+                <ComboBox x:Name="cbJobName" Width="781" Margin="83,0,0,0" Text="{Binding Path=Job.JobTitle}" DataContext="{Binding ElementName=lvEmployeeManagement, Path=SelectedItem}" />
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
+            <!--<StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
                 <Label Content="Manager"/>
-                <TextBox TextWrapping="Wrap" Text="" Width="721" Margin="88,0,0,0" />
-            </StackPanel>
+                <ComboBox x:Name="cbManager" Width="780" Margin="88,0,0,0"/>
+            </StackPanel>-->
             <StackPanel Orientation="Horizontal" Margin="0,10,0,0" >
                 <Label Content="Departmant"/>
-                <TextBox TextWrapping="Wrap" Text="" Width="722" Margin="70,0,0,0" />
+                <ComboBox x:Name="cbDepartment" Width="781" Margin="73,0,0,0"  Text="{Binding Path=Department.DepartmentName}" DataContext="{Binding ElementName=lvEmployeeManagement, Path=SelectedItem}"/>
             </StackPanel>
         </StackPanel>
         <StackPanel Grid.Row="1">
             <StackPanel Orientation="Horizontal">
                 <StackPanel>
                     <Label Content="Name"/>
-                    <TextBox TextWrapping="Wrap" Width="127" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+                    <TextBox x:Name="tbSearchEmpID" TextWrapping="Wrap" Width="127" HorizontalAlignment="Left" Margin="5,0,0,0" Height="25" TextChanged="TextBox_TextChanged"/>
                     <Label Content="Department"/>
-                    <ComboBox Width="126" HorizontalAlignment="Left" Margin="5,0,0,0" Height="20"/>
+                    <ComboBox x:Name="cbDepartmentSearch" Width="126" HorizontalAlignment="Left" Margin="5,0,0,0" Height="26" SelectionChanged="cbDepartmentSearch_SelectionChanged"/>
                 </StackPanel>
-                <ListView x:Name="lvEmployeeManagement" Height="243" d:ItemsSource="{d:SampleData ItemCount=5}" Width="727" Margin="15,10,0,0">
+                <ListView x:Name="lvEmployeeManagement" Height="243" Width="780" Margin="15,10,0,0" PreviewMouseLeftButtonUp="lvEmployeeManagement_PreviewMouseLeftButtonUp">
                     <ListView.View>
                         <GridView>
-                            <GridViewColumn Header="Employee ID"/>
-                            <GridViewColumn Header="FullName"/>
-                            <GridViewColumn Header="Email"/>
-                            <GridViewColumn Header="Phone"/>
-                            <GridViewColumn Header="Hiredate"/>
-                            <GridViewColumn Header="JobName"/>
-                            <GridViewColumn Header="Manager"/>
-                            <GridViewColumn Header="Department"/>
+                            <GridViewColumn Header="Employee ID" DisplayMemberBinding="{Binding Path=EmployeeId}"/>
+                            <GridViewColumn Header="FullName" DisplayMemberBinding="{Binding Path=FullName}"/>
+                            <GridViewColumn Header="Email" DisplayMemberBinding="{Binding Path=Email}"/>
+                            <GridViewColumn Header="Phone" DisplayMemberBinding="{Binding Path=Phone}"/>
+                            <GridViewColumn Header="Hiredate" DisplayMemberBinding="{Binding Path=HireDate}"/>
+                            <GridViewColumn Header="JobName" DisplayMemberBinding="{Binding Path=Job.JobTitle}"/>
+                            <GridViewColumn Header="Manager" DisplayMemberBinding="{Binding Path=Manager.FullName}"/>
+                            <GridViewColumn Header="Department" Width="80" DisplayMemberBinding="{Binding Path=Department.DepartmentName}"/>
                         </GridView>
                     </ListView.View>
                 </ListView>
             </StackPanel>
-            
-            
+            <StackPanel Orientation="Horizontal"  Margin="0,20,25,0" HorizontalAlignment="Right">
+                <Button x:Name="btnRefresh" Content="Refresh" Height="36" Width="113" Background="#FF1894E6" Foreground="#FFFAF9F9" Click="btnRefresh_Click" Margin="50,0,0,0"/>
+                <Button x:Name="btnAdd" Content="Add" Height="36" Width="113" Margin="20,0,0,0" Background="#FF00B217" Foreground="White" Click="btnAdd_Click"/>
+                <Button x:Name="btnUpdate" Content="Update" Height="36" Width="113" Margin="20,0,0,0" Background="#FFF3E509" Foreground="#FF6F4E4E" Click="btnUpdate_Click"/>
+                <Button x:Name="btnDelete" Content="Delete" Height="36" Width="113" Margin="20,0,0,0" Background="#FFE20101" Foreground="White" Click="btnDelete_Click"/>
+                <Button x:Name="btnExportJSON" Content="Export Txt and JSON" Height="36" Width="113" Margin="20,0,0,0" Background="#FFE20173" Foreground="White" Click="btnExportJSON_Click"/>
+                <Button x:Name="btnClose" Content="Close" Height="36" Width="113" Margin="20,0,0,0" Background="#FF9E01E2" Foreground="White" Click="btnClose_Click"/>
+            </StackPanel>
+
+
+
         </StackPanel>
 
 
 
 
-        
+
     </Grid>
 </Window>
 

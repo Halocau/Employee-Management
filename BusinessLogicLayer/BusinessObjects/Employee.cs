@@ -26,7 +26,7 @@ public partial class Employee
     public int? ManagerId { get; set; }
 
     public int? DepartmentId { get; set; }
-
+    public string FullName { get { return FirstName + " " + LastName; } }
     public virtual Department? Department { get; set; }
 
     public virtual ICollection<Department> Departments { get; set; } = new List<Department>();

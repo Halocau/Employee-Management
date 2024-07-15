@@ -637,7 +637,6 @@
       },
       "Repositories/1.0.0": {
         "dependencies": {
-          "BusinessObjects": "1.0.0",
           "DataAccessLayer": "1.0.0"
         },
         "runtime": {
