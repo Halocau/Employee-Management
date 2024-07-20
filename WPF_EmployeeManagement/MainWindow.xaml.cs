@@ -153,7 +153,7 @@ namespace WPF_EmployeeManagement
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
-           
+            tbSearchEmpID.Clear();
             tbEmployeeID.Clear();
             tbsFirstName.Clear();
             tbLastName.Clear();
@@ -274,11 +274,30 @@ namespace WPF_EmployeeManagement
             }
         }
 
+       
+
         private void btnRegionandCountry_Click(object sender, RoutedEventArgs e)
         {
             RegionandCountry regionandCountry = new RegionandCountry();
             regionandCountry.Show();
-         
+        }
+
+        private void btnDepartment_Click(object sender, RoutedEventArgs e)
+        {
+            DepartmentManager departmentManager = new DepartmentManager();
+            departmentManager.Show();
+        }
+
+        private void btnJobs_Click(object sender, RoutedEventArgs e)
+        {
+            JobsManager jobsManager = new JobsManager();
+            jobsManager.Show(); 
+        }
+
+        private void btnLocation_Click(object sender, RoutedEventArgs e)
+        {
+            LocationsManager locationsManager = new LocationsManager();
+            locationsManager.Show();
         }
     }
 }

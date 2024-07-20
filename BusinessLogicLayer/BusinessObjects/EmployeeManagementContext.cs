@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace BusinessObjects.BusinessObjects;
 
@@ -31,10 +32,17 @@ public partial class EmployeeManagementContext : DbContext
 
     public virtual DbSet<Role> Roles { get; set; }
 
+    //    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+    //        => optionsBuilder.UseSqlServer("server =Desktop-by-me\\SQLEXPRESS; database =EmployeeManagement; uid=sa;pwd=123;Encrypt=false");
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("server =Desktop-by-me\\SQLEXPRESS; database =EmployeeManagement; uid=sa;pwd=123;Encrypt=false");
-
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            var ConnectionString = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build().GetConnectionString("DefaultConnection");
+            optionsBuilder.UseSqlServer(ConnectionString);
+        }
+    }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<AccountMember>(entity =>
@@ -47,6 +55,10 @@ public partial class EmployeeManagementContext : DbContext
             entity.Property(e => e.EmailAddress).HasMaxLength(100);
             entity.Property(e => e.FullName).HasMaxLength(80);
             entity.Property(e => e.MemberPassword).HasMaxLength(80);
+
+            entity.HasOne(d => d.Employee).WithMany(p => p.AccountMembers)
+                .HasForeignKey(d => d.EmployeeId)
+                .HasConstraintName("FK_AccountMember_Employees");
 
             entity.HasOne(d => d.MemberRoleNavigation).WithMany(p => p.AccountMembers)
                 .HasForeignKey(d => d.MemberRole)
@@ -76,9 +88,7 @@ public partial class EmployeeManagementContext : DbContext
         {
             entity.HasKey(e => e.DepartmentId).HasName("PK__Departme__B2079BCD4F0E5532");
 
-            entity.Property(e => e.DepartmentId)
-                .ValueGeneratedNever()
-                .HasColumnName("DepartmentID");
+            entity.Property(e => e.DepartmentId).HasColumnName("DepartmentID");
             entity.Property(e => e.DepartmentName)
                 .HasMaxLength(50)
                 .IsUnicode(false);

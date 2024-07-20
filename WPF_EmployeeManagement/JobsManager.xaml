@@ -1,0 +1,58 @@
+﻿<Window x:Class="WPF_EmployeeManagement.JobsManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_EmployeeManagement"
+        mc:Ignorable="d"
+        Title="MainWindow" Loaded="Window_Loaded" Height="500" Width="1000">
+    <Grid Background="AntiqueWhite">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1"  Margin="10,0,0,0">
+            <Label x:Name="Job" Content="Job" Foreground="#FFF70D0D" FontSize="22" FontWeight="Bold" Margin="10,0,0,0" HorizontalAlignment="Center"/>
+            <Label Content="JobID" Margin="10,0,0,0"/>
+            <TextBox x:Name="tbJobID" TextWrapping="Wrap" Width="328" HorizontalAlignment="Left" Height="24" Margin="10,0,0,0" />
+            <Label Content="JobTitle" Margin="10,0,0,0"/>
+            <TextBox x:Name="tbJobTitle" TextWrapping="Wrap" Width="328" Height="24" HorizontalAlignment="Left" Margin="10,0,0,0" />
+            <Label Content="Min Salary" Margin="10,0,0,0"/>
+            <TextBox x:Name="tbMinSalary" TextWrapping="Wrap" Width="328" Height="24" HorizontalAlignment="Left" Margin="10,0,0,0" />
+            <Label Content="Max Salary" Height="24" Margin="10,0,0,0"/>
+            <TextBox x:Name="tbMaxSalary" TextWrapping="Wrap" Width="328" Height="24" HorizontalAlignment="Left" Margin="10,0,0,0" />
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnInsert" Content="Add" Width="101" Height="29" Margin="10,20,0,0" Click="btnInsert_Click" />
+                <Button x:Name="btnEdit" Content="Edit" Width="101" Height="29" Margin="10,20,0,0" Click="btnEdit_Click"/>
+                <Button x:Name="btnDelete" Content="Delete" Width="101" Height="29" Margin="10,20,0,0" Click="btnDelete_Click"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="btnRefresh" Content="Refresh" Width="101" Height="29" Margin="10,5,0,0" Click="btnRefresh_Click" />
+                <Button x:Name="btnClose" Content="Close" Width="101" Height="29" Margin="10,5,0,0" Click="btnClose_Click"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Column="0">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Salary" Margin="0,20,20,5"/>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="min" VerticalAlignment="Bottom" Margin="0,0,0,5"/>
+                    <TextBox x:Name="tbMin" TextWrapping="Wrap" Width="120" Height="21" VerticalAlignment="Bottom" Margin="0,0,0,5"/>
+                    <Label Content="---" Margin="0,20,0,5"/>
+                    <Label Content="max" VerticalAlignment="Bottom" Margin="0,0,0,5"/>
+                    <TextBox x:Name="tbMax" TextWrapping="Wrap" Width="120" Height="21" VerticalAlignment="Bottom" Margin="0,0,0,5"/>
+                    <Button x:Name="btnSearch" Content="Search" Width="101" Height="21" Margin="10,5,0,5" Click="btnSearch_Click" VerticalAlignment="Bottom" />
+                </StackPanel>
+            </StackPanel>
+            <ListView x:Name="lvJob" Height="372" SelectionChanged="lvJob_SelectionChanged">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Job ID" DisplayMemberBinding="{Binding Path=JobId}"/>
+                        <GridViewColumn Header="Job Title" DisplayMemberBinding="{Binding Path=JobTitle}"/>
+                        <GridViewColumn Header="Min Salary" DisplayMemberBinding="{Binding Path=MinSalary}"/>
+                        <GridViewColumn Header="Max Salary" DisplayMemberBinding="{Binding Path=MaxSalary}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+    </Grid>
+</Window>

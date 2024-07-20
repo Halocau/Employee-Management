@@ -10,6 +10,7 @@ namespace Repositories
 {
     public interface IAccountMemberRepository
     {
+        AccountMember GetAccountWithDetails(string username, string password);
         IEnumerable<AccountMember> GetAccountMembers();
         AccountMember GetAccountMemberByID(int accountid);
         void InsertAccountMember(AccountMember member);

@@ -45,34 +45,47 @@ namespace WPF_EmployeeManagement
                     MessageBox.Show("Username or password cannot be empty.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
-                else
+
+                var accountRepository = new AccountMemberRepository();
+                AccountMember account = accountRepository.CheckAccount(tbUserName.Text, tbPassword.Password);
+
+                if (account != null)
                 {
-                    AccountMember accountMember = iAccountMemberRepository.CheckAccount(tbUserName.Text, tbPassword.Password);
-                    if (accountMember != null)
+                    // Kiểm tra vai trò của tài khoản
+                    if (account.MemberRole == 1)
                     {
-                        if (accountMember.MemberRole == 1)
+                        // Nếu MemberRole là 1, chỉ cần kiểm tra tài khoản
+                        MessageBoxResult result = MessageBox.Show("Login successful!", "Success", MessageBoxButton.OKCancel, MessageBoxImage.Information);
+                        if (result == MessageBoxResult.OK)
                         {
-                            MessageBoxResult result = MessageBox.Show("Login successful!", "Success", MessageBoxButton.OKCancel, MessageBoxImage.Information);
-                            if (result == MessageBoxResult.OK)
-                            {
-                                MainWindow mainWindow = new MainWindow();
-                                mainWindow.Show();
-                                this.Close();
-                            }
-                            else if (result == MessageBoxResult.Cancel)
-                            {
-                                this.Close();
-                            }
+                            MainWindow mainWindow = new MainWindow();
+                            mainWindow.Show();
+                            this.Close();
                         }
-                        else
+                        else if (result == MessageBoxResult.Cancel)
                         {
-                            MessageBox.Show("You do not have the required role to access this application.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                            this.Close();
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Your account and password are not correct!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        // Nếu MemberRole không phải 1, lấy chi tiết tài khoản và kiểm tra
+                        AccountMember accountMember = accountRepository.GetAccountWithDetails(account.FullName, tbPassword.Password);
+                        if (accountMember != null)
+                        {
+                            ProfileUser profileUser = new ProfileUser(accountMember);
+                            profileUser.Show();
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Failed to retrieve account details.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
                     }
+                }
+                else
+                {
+                    MessageBox.Show("Your account and password are not correct!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             catch (Exception ex)
@@ -80,5 +93,6 @@ namespace WPF_EmployeeManagement
                 MessageBox.Show(ex.Message);
             }
         }
+
     }
 }

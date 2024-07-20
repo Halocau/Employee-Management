@@ -7,7 +7,25 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="DepartmentManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DepartmentUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeeUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="JobsManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LocationsManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProfileUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="RegionandCountry.xaml.cs">
@@ -18,10 +36,28 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="DepartmentManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DepartmentUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EmployeeUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="JobsManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LocationsManager.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Login.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProfileUser.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="RegionandCountry.xaml">
