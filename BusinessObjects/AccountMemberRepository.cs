@@ -60,31 +60,11 @@ namespace Repositories
                                 Salary = emp.Salary,
                                 CommissionPct = emp.CommissionPct,
                                 ManagerId = emp.ManagerId,
-                                DepartmentId = emp.DepartmentId,
-                                // Join với bảng Departments để lấy thông tin phòng ban
-                                Department = context.Departments
-                                    .Where(d => d.DepartmentId == emp.DepartmentId)
-                                    .Select(d => new Department
-                                    {
-                                        DepartmentId = d.DepartmentId,
-                                        DepartmentName = d.DepartmentName,
-                                        ManagerId = d.ManagerId,
-                                        LocationId = d.LocationId,
-                                        // Join với bảng Locations để lấy thông tin địa điểm
-                                        Location = context.Locations
-                                            .Where(l => l.LocationId == d.LocationId)
-                                            .Select(l => new Location
-                                            {
-                                                LocationId = l.LocationId,
-                                                StreetAddress = l.StreetAddress,
-                                                PostalCode = l.PostalCode,
-                                                City = l.City,
-                                                StateProvince = l.StateProvince,
-                                                CountryId = l.CountryId,
-                                            }).FirstOrDefault()
-                                    }).FirstOrDefault()
+                                DepartmentId = emp.DepartmentId
+
                             }).FirstOrDefault()
                     }).FirstOrDefault();
+                     
 
                 return accountMember;
             }

@@ -160,6 +160,7 @@ namespace WPF_EmployeeManagement
             tbEmail.Clear();
             tbPhone.Clear();
             dpHireDate.SelectedDate = null;
+            dpSearchHireDate.SelectedDate = null;
             //cbManager.SelectedValue = null;
             //cbManager.SelectedIndex = -1;
             //cbManager.Text = string.Empty;
@@ -298,6 +299,30 @@ namespace WPF_EmployeeManagement
         {
             LocationsManager locationsManager = new LocationsManager();
             locationsManager.Show();
+        }
+
+        private void dpSearchHireDate_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                if (dpSearchHireDate.SelectedDate.HasValue)
+                {
+                    var hireDate = DateOnly.FromDateTime(dpSearchHireDate.SelectedDate.Value);
+                    var employeesByHireDate = iEmployeeRepository.GetEmployeesByHireDate(hireDate);
+                    lvEmployeeManagement.ItemsSource = employeesByHireDate;
+                    lblItemCount.Content = $"Count: {employeesByHireDate.Count()}";
+                    lblItemCount.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    LoadData();
+                    lblItemCount.Visibility = Visibility.Collapsed;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

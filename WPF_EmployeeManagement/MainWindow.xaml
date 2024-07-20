@@ -60,11 +60,14 @@
                     <TextBox x:Name="tbSearchEmpID" TextWrapping="Wrap" Width="127" HorizontalAlignment="Left" Margin="5,0,0,0" Height="25" TextChanged="TextBox_TextChanged"/>
                     <Label Content="Department"/>
                     <ComboBox x:Name="cbDepartmentSearch" Width="126" HorizontalAlignment="Left" Margin="5,0,0,0" Height="26" SelectionChanged="cbDepartmentSearch_SelectionChanged"/>
+                    <Label Content="Search HireDate"/>
+                    <DatePicker x:Name="dpSearchHireDate" Width="134" SelectedDateChanged="dpSearchHireDate_SelectedDateChanged"/>
                     <Label x:Name="lblItemCount" Content="Count: 0" Height="25" FontSize="10" Visibility="Collapsed"/>
                     <Button x:Name="btnRegionandCountry" Content="Region and Country" Margin="0,30,0,0" Click="btnRegionandCountry_Click" Background="#FF2067D7" Foreground="#FFF1E1E1"/>
                     <Button x:Name="btnDepartment" Content="Department" Background="#FF2067D7" Foreground="#FFF1E1E1" Margin="0,3,0,0" Click="btnDepartment_Click"/>
                     <Button x:Name="btnJobs" Content="Jobs" Background="#FF2067D7" Foreground="#FFF1E1E1" Click="btnJobs_Click" Margin="0,3,0,0" />
                     <Button x:Name="btnLocation" Content="Location" Background="#FF2067D7" Foreground="#FFF1E1E1" Margin="0,3,0,0" Click="btnLocation_Click" />
+                    
                 </StackPanel>
                 <ListView x:Name="lvEmployeeManagement" Height="243" Width="780" Margin="15,10,0,0" PreviewMouseLeftButtonUp="lvEmployeeManagement_PreviewMouseLeftButtonUp">
                     <ListView.View>

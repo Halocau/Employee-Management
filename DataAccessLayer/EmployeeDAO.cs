@@ -134,5 +134,24 @@ namespace DataAccessLayer
                 throw new Exception(ex.Message);
             }
         }
+        public IEnumerable<Employee> GetEmployeesByHireDate(DateOnly hireDate)
+        {
+            IEnumerable<Employee> employees = null;
+            try
+            {
+                using var context = new EmployeeManagementContext();
+                employees = context.Employees
+                                    .Include(x => x.Job)
+                                    .Include(x => x.Department)
+                                    .Include(x => x.Manager)
+                                    .Where(x => x.HireDate >= hireDate)
+                                    .ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return employees;
+        }
     }
 }

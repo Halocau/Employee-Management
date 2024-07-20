@@ -9,6 +9,7 @@ namespace Repositories
 {
     public interface IEmployeeRepository
     {
+        IEnumerable<Employee> GetEmployeesByHireDate(DateOnly hireDate);
         IEnumerable<Employee> GetEmployees();
         Employee GetEmployeeByID(int id);
         IEnumerable<Employee> GetEmployeeByName(string name);
